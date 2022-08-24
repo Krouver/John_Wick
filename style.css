@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+.logo > p {
+  text-transform: uppercase;
+  background-color: rgb(161, 97, 51);
+  color: #fff;
+  padding: 10px;
+  padding-left: 50px;
+  position: relative;
+  top: 23px;
+  left: -30px;
+  width: 70%;
+}
+p {
+  color: rgb(36, 88, 90);
+  text-transform: capitalize;
+  margin: 0;
+  padding: 20px 0 10px 0;
+}
+.forma {
+  display: grid;
+  position: relative;
+  min-width: 600px;
+  grid-template-columns: repeat(1, 1.5fr 1fr);
+  overflow: hidden;
+}
+input {
+  background-color: rgb(123, 201, 204);
+  border: none;
+  border-bottom: 1px solid black;
+  height: 30px;
+  min-width: 100%;
+}
+.forma > img {
+  position: absolute;
+  width: 320px;
+  bottom: -70px;
+  right: -95px;
+}
+.input_form {
+  padding: 20px;
+  padding-bottom: 60px;
+}
+.expiry_date {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "day . cvv"
+    "inp_day inp_year inp_cvv";
+}
+.expiry_date > input {
+  width: 80px;
+  height: 30px;
+}
+.expiry_date > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.expiry_date > p {
+  padding-bottom: 0;
+}
+.day {
+  grid-area: day;
+}
+.inp_day {
+  grid-area: inp_day;
+}
+.inp_year {
+  grid-area: inp_year;
+}
+.cvv {
+  grid-area: cvv;
+  text-transform: uppercase;
+}
+.inp_cvv {
+  grid-area: inp_cvv;
+}

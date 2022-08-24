@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <input type="number" onkeypress="this.value=this.value.substring(0,16);" placeholder="**** **** **** ****"> -->
+      <div class="logo">
+        <p>credit card deatails</p>
+      </div>
+      <div class="forma">
+        <div class="input_form">
+          <div class="card_number">
+            <p>card number</p>
+            <input
+              type="number"
+              onkeypress="this.value=this.value.substring(0,16);"
+              placeholder="**** **** **** ****"
+            />
+          </div>
+          <div class="name_on_card">
+            <p>name on card</p>
+            <input type="text" placeholder="Name Surname" />
+          </div>
+          <div class="expiry_date">
+            <p class="day">expiry date</p>
+            <input
+              type="number"
+              class="inp_day"
+              placeholder="**"
+              maxlength="2"
+            />
+            <input
+              type="number"
+              maxlength="4"
+              class="inp_year"
+              placeholder="****"
+            />
+            <p class="cvv">cvv/cvn</p>
+            <input
+              type="password"
+              maxlength="3"
+              class="inp_cvv"
+              placeholder="***"
+            />
+          </div>
+        </div>
+        <img src="./img/moon_flag.png" alt="#" />
+      </div>
+    </div>
+  </body>
+</html>
